@@ -1,4 +1,4 @@
-#define BLYNK_TEMPLATE_ID "TMPL3GTtOOQG1"
+  #define BLYNK_TEMPLATE_ID "TMPL3GTtOOQG1"
 #define BLYNK_TEMPLATE_NAME "Air Quality Detector"
 #define BLYNK_AUTH_TOKEN "Qdd8QblaecCAwsMk4JNQrXhNrnMwr9nD"
 
