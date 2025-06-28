@@ -1,89 +1,67 @@
-# 📘 Welcome to the IS Project Documentation Template!
-
-Hey there! 👋
-
-This repository is your home for documenting your **Innovation School Project** and starting your **maker portfolio**.  
-You’ll be using the **GitHub Wiki** to update all your project details in a structured format.
 
 ---
 
-## 🧠 What to Do First
+# 🌫️ Air Quality Monitoring & Control System
 
-Start by writing a **brief introduction** to your project right here in this `README.md` file:
+## 📌 Overview
 
-🔹 What problem are you solving?  
-🔹 What’s your proposed solution?
-
-Just 2–3 lines are enough. This helps others quickly understand what your project is about.
-
-Click on the ✏️ PENCIL icon next to the README title above, and you can edit the README directly from within your browser.
+This project is a **smart air quality monitoring device** designed to detect harmful gases and pollutants in the environment. It features a **local display** for real-time readings and a **Wi-Fi connection** for remote monitoring via the **Blynk app**. Additionally, it includes a **relay module** that can automatically trigger external devices such as **fans or air purifiers** based on air quality levels.
 
 ---
 
-## 🛠 Where to Document Everything Else
+## 🔧 Features
 
-We’ve already created a standard set of [**Wiki pages**](https://github.com/MakersAsylumIndia/Bowl-Buddy/wiki) for your project in this repository — you just need to **update them with your project information**.
+* 📊 **Real-Time Air Quality Readings**
 
-Each section is ready with headings like:
+  * Detects multiple pollutants using:
 
-- Project Title
-- Problem Statement
-- Bill of Materials (BOM)
-- Solution Overview
-- SDG Goals Associated
-- Circuit & CAD Files
-- Media Gallery
-- License
+    * **MQ-2** (smoke and combustible gases)
+    * **MQ-7** (carbon monoxide)
+    * **MQ-135** (air quality and harmful gases)
 
-Please **do not delete the headings** — just replace the placeholder content under each.
+* 🖥️ **On-Device Display**
 
----
+  * LCD screen displays live sensor data for quick local monitoring.
 
-## 📚 How to Edit the GitHub Wiki Pages
+* 📱 **Wi-Fi Connectivity**
 
-Follow these official GitHub help guides to learn how to edit your Wiki pages:
+  * Sends data to the **Blynk IoT platform**, allowing users to:
 
-🔗 [How to Add or Edit Wiki Pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages)  
-🔗 [How to Format and Save Content in Wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/editing-wiki-content)
+    * View live readings on their phone
+    * Receive alerts when air quality drops below a set threshold
 
----
+* ⚡ **Relay-Controlled Automation**
 
-## 📸 Visual Guide (Optional)
+  * Integrated **relay module** can activate external systems like:
 
-If you’re unsure where the Wiki tab is:  
-📍 It’s on the top-right area of the repository (next to Code, Issues, Pull Requests).
-
-You’ll find your project listed there. Click on it, then click **“Edit”** to begin updating.
+    * Exhaust fans
+    * Air purifiers
+    * Alarms or indicators
+  * Triggered automatically based on sensor thresholds
 
 ---
 
-## 🤝 Need Help?
+## 🔩 Hardware Used
 
-If you're confused at any step:
-- Ask your mentor or coordinator
-- Or drop a message in our Discord/WhatsApp support group
-
-Let’s build something awesome! 🚀
-
-## License
-
-Licenses
-
-<a href="LICENSE.md"><img src="Media\Images\Licenses_facts.svg" width="400" alt="Open Source Licenses Facts"/></a>
-
-#### Hardware
-CERN Open Hardware License Version 2 - Strongly Reciprocal ([CERN-OHL-S-2.0](https://spdx.org/licenses/CERN-OHL-S-2.0.html)).
-
-#### Software
-MIT open source [license](http://opensource.org/licenses/MIT).
-
-#### Documentation:
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+* **ESP 32 WROOM**
+* **MQ-2, MQ-7, MQ-135 Sensors**
+* **LCD Display**
+* **Relay Module**
+* **Perforated board (for permanent circuit)**
+* **Custom Laser-Cut Enclosure**
 
 ---
 
-## 📬 Contact/Team
+## 📲 Mobile Integration
 
-> _List team members and contact emails or GitHub profiles._
+* Integrated with the **Blynk Console** for:
+
+  * Real-time graphing
+  * Notifications and alerts
+  * Manual/automatic relay control
+* Blynk dashboard includes:
+
+  * Live sensor data
+  * Control switch for manual override of the relay
 
 ---
